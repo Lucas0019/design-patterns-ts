@@ -12,18 +12,21 @@ import UberTransport from "./vehicles/factories/UberTransport";
 const currentComapny = Company.NINENINE
 let factory: ITransportFactory
 
+function initRouteClient() {
+  const client = new Client(factory);
+  client.starRoute();
+}
+
 switch (currentComapny) {
   case Company.UBER:
     factory = new UberTransport()
+    initRouteClient()
     break;
   case Company.NINENINE:
     factory = new NineNineTransport()
+    initRouteClient()
     break;
   default:
     console.error('Invalid company')
 }
 
-
-const client = new Client(factory);
-
-client.starRoute();
