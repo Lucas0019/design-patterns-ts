@@ -5,3 +5,5 @@ Padrões de Projeto GoF e Princípios SOLID em explicações práticas com exemp
 - SOLID
 - GoF
 - Design Patterns
+
+<img src="./design-patterns-ts.jpg" alt="Certificado"/>
